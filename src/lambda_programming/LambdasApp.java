@@ -1,5 +1,7 @@
 package lambda_programming;
 
+import lambda_programming.data.Guitar;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
@@ -26,10 +28,10 @@ public class LambdasApp {
         };
         System.out.println(supplier.get());
 
-        Consumer<String> consumer = (String s) -> System.out.println(s);
+        Consumer<String> consumer = (s) -> System.out.println(s);
         consumer.accept("testing consumer interface");
 
-        Consumer<String> consumerTwo = (String s) -> {
+        Consumer<String> consumerTwo = (s) -> {
             System.out.println("Printing from inside the second Consumer interface");
             System.out.println(s);
         };
